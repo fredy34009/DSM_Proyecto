@@ -1,5 +1,5 @@
 class CarritoItems() {
-
+    //metodo de agregar un producto al carrito de compras
     fun agregarProducto(carrito:MutableList<Pair<Producto,Int>>,lista: MutableList<Producto>,ANSI_RESET:String,ANSI_RED:String)
     {
         println("Ingrese el ID del producto")
@@ -27,7 +27,7 @@ class CarritoItems() {
             readlnOrNull()
         }
     }
-
+    //metodo de eliminar un producto del carrito de compras
     fun eliminarProducto(carrito:MutableList<Pair<Producto,Int>>,lista: MutableList<Producto>,ANSI_RESET:String,ANSI_RED:String)
     {
         if (carrito.isEmpty()) {
@@ -51,6 +51,8 @@ class CarritoItems() {
             }
         }
     }
+
+    //metodo para mostrar los productos en el carrito de compras
     fun verCarrito(carrito:MutableList<Pair<Producto,Int>>,lista: MutableList<Producto>,ANSI_RESET:String,ANSI_RED:String)
     {
         if(carrito.isEmpty())
@@ -71,6 +73,8 @@ class CarritoItems() {
             println("---------------------------------------------------------")
         }
     }
+
+     //metodo para facturar los productos que estan en el carrito de compras
     fun facturar(carrito:MutableList<Pair<Producto,Int>>,lista: MutableList<Producto>,ANSI_RESET:String,ANSI_RED:String,ANSI_GREEN:String,ANSI_BLUE:String)
     {
         if(carrito.isEmpty())
