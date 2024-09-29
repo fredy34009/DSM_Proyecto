@@ -1,9 +1,11 @@
 class Utils {
+    //Mensaje para relizar una pausa despues de ejecutar una accion
     fun mensajePausa()
     {
         println("Presiona ENTER para continuar...")
         readlnOrNull()
     }
+    //Muestra las opciones del menu principal
     fun menuPrincipal(ANSI_BLUE:String,ANSI_RESET:String)
     {
         println("****************************************\nCarrito de compras selecciona una opcion")
@@ -13,6 +15,7 @@ class Utils {
         println("4-Facturar")
         println("0-Salir"+ANSI_RESET)
     }
+    //Muestra los productos disponibles en stock
     fun mostrarproductos(lista:MutableList<Producto>)
     {
         println("Lista de productos disponibles")
